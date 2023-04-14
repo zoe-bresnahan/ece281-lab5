@@ -20,16 +20,25 @@
 --|    s_<signal name>          = state name
 --|
 --+----------------------------------------------------------------------------
+--|
+--| ALU OPCODES:
+--|
+--|     ADD     000
+--|
+--|
+--|
+--|
+--+----------------------------------------------------------------------------
 library ieee;
   use ieee.std_logic_1164.all;
   use ieee.numeric_std.all;
 
 
-entity top_basys3 is
+entity ALU is
 -- TODO
-end top_basys3;
+end ALU;
 
-architecture top_basys3_arch of top_basys3 is 
+architecture behavioral of ALU is 
   
 	-- declare components and signals
 
@@ -43,4 +52,4 @@ begin
 	
 	
 	
-end top_basys3_arch;
+end behavioral;
