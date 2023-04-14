@@ -1,6 +1,6 @@
-# Lab 4: Advanced Elevator Controller
+# Lab 5: Basic CPU
 
-VHDL for ECE 281 [Lab 4](https://usafa-ece.github.io/ece281-book/lab/lab4.html)
+VHDL for ECE 281 [Lab 5](https://usafa-ece.github.io/ece281-book/lab/lab5.html)
 
 Targeted toward Digilent Basys3. Make sure to install the [board files](https://github.com/Xilinx/XilinxBoardStore/tree/2018.2/boards/Digilent/basys3).
 

@@ -70,23 +70,8 @@ library ieee;
   use ieee.numeric_std.all;
 
 
--- Lab 4
 entity top_basys3 is
-    port(
-        -- inputs
-        clk     :   in std_logic; -- native 100MHz FPGA clock
-        sw      :   in std_logic_vector(15 downto 0);
-        btnU    :   in std_logic; -- master_reset
-        btnL    :   in std_logic; -- clk_reset
-        btnR    :   in std_logic; -- fsm_reset
-        
-        -- outputs
-        led :   out std_logic_vector(15 downto 0);
-        -- 7-segment display segments (active-low cathodes)
-        seg :   out std_logic_vector(6 downto 0);
-        -- 7-segment display active-low enables (anodes)
-        an  :   out std_logic_vector(3 downto 0)
-    );
+-- TODO
 end top_basys3;
 
 architecture top_basys3_arch of top_basys3 is 
@@ -101,12 +86,6 @@ begin
 	
 	-- CONCURRENT STATEMENTS ----------------------------
 	
-	-- LED 15 gets the FSM slow clock signal. The rest are grounded.
 	
-
-	-- leave unused switches UNCONNECTED. Ignore any warnings this causes.
-	
-	-- wire up active-low 7SD anodes (an) as required
-	-- Tie any unused anodes to power ('1') to keep them off
 	
 end top_basys3_arch;
