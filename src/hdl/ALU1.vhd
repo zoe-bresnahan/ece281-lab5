@@ -90,7 +90,7 @@ begin
         w_rightshift when (i_op(2 downto 1) = "11");
         
     o_result <= signed(w_result(7 downto 0));
-    o_flags(0) <= w_check1(8) or w_check2(8) or w_check3(8); --carry
+    o_flags(0) <= '1' when (w_check1(8)= '1' or w_check2(8) = '1' or w_check3(8)= '1') else '0'; --carry
     o_flags(1) <= '1' when (w_result(7 downto 0) = "00000000") else '0'; --zero
     o_flags(2) <= not(w_result(7)); --sign flag (on when +)
         
